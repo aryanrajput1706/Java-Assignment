@@ -37,7 +37,7 @@ public class Main {
 
         double monthlyLoanRate = (loanRate/12)/100;
         int totalLoanMonths = loanYears * 12;
-        double monthlyEMIPayment = (propertyCost * loanRate * Math.pow(1+loanRate,totalLoanMonths))/(Math.pow(1+loanRate,totalLoanMonths)-1);
+        double monthlyEMIPayment = (propertyCost * monthlyLoanRate * Math.pow(1+monthlyLoanRate,totalLoanMonths))/(Math.pow(1+monthlyLoanRate,totalLoanMonths)-1);
 
         System.out.println("Your montly EMI is :" + monthlyEMIPayment);
 
